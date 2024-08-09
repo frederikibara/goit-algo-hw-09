@@ -13,6 +13,7 @@ It handles user interactions such as adding, modifying and displaying contacts.
 Update:
    - added interface : IUserInterface
    - added adapter : ConsoleAdapter implements IUserInterface
+   - fixed method for clear all contacacts from file
    - program structure extends
 
 Commands:
@@ -54,7 +55,7 @@ Commands:
             case 'all':
                 console.show_contact_list(show_all(book))           
             case 'clear':
-                console.show_message(clear_all_contacts(book))
+                console.show_message(clear_all_data(DATA))
             case 'add-b':
                 console.show_message(add_birthday(args, book))
             case 'show-b':

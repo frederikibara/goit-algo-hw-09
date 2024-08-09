@@ -15,5 +15,11 @@ def load_from_file(file):
         return AddressBook()
     except EOFError:
         return AddressBook()
+    
+
+def clear_all_data(file):
+    empty_book = AddressBook()  
+    save_to_file(empty_book, file)  
+    return "All data has been removed."       
         
             
