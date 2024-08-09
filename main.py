@@ -11,7 +11,8 @@ Main contains the basic functionality of the bot assistant application.
 It handles user interactions such as adding, modifying and displaying contacts.
 
 Update:
-   - added interface 
+   - added interface : IUserInterface
+   - added adapter : ConsoleAdapter implements IUserInterface
    - program structure extends
 
 Commands:
